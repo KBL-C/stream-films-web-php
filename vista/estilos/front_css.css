@@ -1,0 +1,367 @@
+
+
+body{
+    border-style: solid;
+    background-color: rgb(235, 164, 11, 0.2);
+    
+    border-color: rgb(#e64a19, 0.2);
+    margin: auto;/*para que se centralice*/
+}
+
+.head{
+    /*background-color:rgb(190, 102, 2);*/
+    background-color: #ac0800;
+    font-size: 60px;
+    color: white;
+    margin: 16xp;
+    height: 70px;
+    display: flex;
+    
+}
+#head{
+    /*background-color:rgb(190, 102, 2);*/
+    background-color: #ac0800;
+    font-size: 60px;
+    color: black;
+    margin: 16xp;
+    text-align: center;
+    text-decoration: none;
+}
+
+.buscar{
+    margin-left: 800px;
+    border-radius: 30px;
+}
+
+.menu{
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    animation-name: men;
+    animation-duration: 4s;
+    background-color: #ff7d47;
+}
+ul{
+    list-style: none;
+    border-style: solid;
+    border-color: #ac0800;
+    border-width: 10px;
+    text-align: center;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    align-items: center;
+    padding: 5px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin-top: 1px;
+    text-decoration: none;
+    margin: auto;
+    width: 80%;
+}
+  
+li a:hover {
+    background-color: rgb(1, 7, 8, 0.6);
+    width: 80%;
+    margin: auto;
+}
+/*Animacion menu*/
+@keyframes men {
+    from {background-color:rgb(243, 240, 240);}
+    to {background-color:rgb(8, 4, 0);}
+}
+a{
+    text-decoration: none;
+}
+
+
+/**************************************************************************************************************/
+#btnusuarios{
+    text-align: right;
+    nav-left: auto;
+}
+
+#t1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.t1{
+    animation-duration: 3s;
+    /*animation-name: slidein;*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+/*Animación para el título*/
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+/*index usuario y detalle usuario y pelis fav************************************************************************************************************/
+#backdetalle{
+    width: 100px;
+    background-color: black;
+    
+}
+
+#full_cont_detail_usuario{
+    animation-name: men;
+    animation-duration: 4s;
+    background-color: #e64a19;
+    height: 83vh;
+    overflow: scroll;
+    /*float: left;*/
+  
+}
+#full_cont_pelisFav{
+    animation-name: men;
+    animation-duration: 4s;
+    background-color: #e64a19;
+    height: 90vh;
+    overflow: scroll;
+    /*float: right;*/
+}
+
+.cont{
+    border-style: double;
+    border-color:black;
+    background-color: #ffa270;
+    
+    display:inline-block;
+    /*float: left;*/
+    margin:30px;
+    padding: 10px;
+    
+}
+
+.usuarioDetalle{
+    border-style: double;
+    border-color:black;
+    background-color: #ffa270;
+    padding: 10px;
+    width: 200px;
+}
+
+#usuarioDetalle{
+    width: 400px;
+    /*float: right;*/
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.favPeli{
+    border-style: double;
+    border-color:aliceblue;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#favPeli{
+    width: 400px;
+    float: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buscar{
+    background-color: black;
+    color: white;
+}
+.btnbuscar{
+    background-color: black;
+    color: white;
+}
+
+/*boton de eliminar pelicula*/
+
+
+/*mostra peliculas********************************************************************************************/
+#full_cont_peli{
+    animation-name: men;
+    animation-duration: 4s;
+    background-color: #e64a19;
+    height: 100vh;
+    overflow: scroll;
+  
+}
+.peli{
+    border-style: double;
+    border-color:black;
+    background-color: #ffa270;
+    padding: 10px;
+    /*float: left;*/
+}
+
+#peli{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /*float: left;*/
+    border-radius:20px;
+}
+#full_cont_peli#ppeli{
+    background-color: black;
+}
+.peliComment{
+    border-style: double;
+    border-color:aliceblue;
+    background-color: lightgrey;
+    padding: 10px;
+    /*float: left;*/
+    background-color: lightgray;
+    border-radius:20px;
+}
+
+#peliComment{
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    width: 900px;
+    height: 200px;
+    /*float: left;*/
+}
+
+.commentpeli{
+    border-style: double;
+    border-color:black;
+    background-color: lightgrey;
+    padding: 10px;
+    
+    
+}
+
+#commentpeli{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#perfil{
+    width:300px;
+    height:300px;
+    border-radius:150px;
+}
+
+/*Formulario suuarios***********************************************************************/
+/*formulario Usuario****************************************************************/
+.form{
+    border-width: 5px;
+    border-radius: 10px;
+
+}
+.userForm{
+    text-align: center;
+}
+.datosU{
+    display: block;
+    background-color: rgb(235, 164, 11, 0.2);
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+#dataU{
+    margin-right: 30px;
+}
+#nUsarioT{
+    text-align: center;
+    font-style: italic;
+}
+
+.validarFoto{
+    border-style: double;
+    border-color:aliceblue;
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+#validarFoto{
+    width: 400px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#añadirUsuario{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    background-color: rgb(3, 31, 21);
+}
+
+.btnenviarUsuario {
+    text-decoration: none;
+    border-color: #f00a0a;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #f03c63 inset, 0 0 0 0 #801938;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+.btnenviarUsuario:hover {
+  box-shadow: 0 0 10px 0 #f12105 inset, 0 0 10px 4px #db3f34;
+}
+
+.generarNick{
+    display: block;
+    background-color: rgb(190, 102, 2, 0.2);
+}
+.btngenerarNick{
+    display: block;
+    float: right;
+    color: white;
+    justify-content: center;
+    padding: 2px 6px;
+    background-color: rgb(240, 11, 22);
+}
+/*
+#btngenerar{
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+#btngenerar{
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+
+}
+*/
+
+
+
+
+/*Formulario peliculas**********************************************************************/
+
+
+
+
+footer {
+    background-color: black;
+    clear: both;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
+    color: white;
+
+}
+.copyright{
+    background-color:rgb(11, 151, 238);
+}
+.contenedor{
+    background-color:lightskyblue;
+    color:black;
+}

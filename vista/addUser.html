@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type">
+        <meta content="text/html">
+        <meta charset="utf-8">
+        <title>html_pelis_raffinity</title>
+        <link rel="stylesheet" type="text/css" href="../vista/estilos/front_css.css">
+        <script type="text/javascript" src="../JavaScript/checkUserData.js"></script>
+    </head>
+    <body>
+        <header class="head">
+            <a id="head" href="./indexes/indexMovie.php">Raffinity</a>
+            <form action="./indexes/indexMovie.php" method="GET" autocomplete="off">
+                <label for="buscar"></label><input type="text" name="buscador" id="buscar" placeholder="search movie by name" class="buscar">
+                <button type="submit"  class="btnbuscar" name="button" value="buscar" >search</button>     
+            </form>
+        </header>
+        <nav class="menu">
+            <ul  id="backmenu">
+                <li><a href="./indexes/indexMovie.php">Movies</a></li>
+                <!--<li><a href="favoritos.php">Favoritos</a></li>-->
+                <li><a href="addMovie.html">Add movies</a></li>
+                <li><a href="addUser.html">Add users</a></li>
+                <li id="btnusuarios"><a href="./indexes/indexUser.php">Users</a></li>
+            </ul>
+        </nav>
+
+        <form action="../controlador/formularios/processUser.php" method="POST" name="formUser" autocomplete="off">
+            <div id="form">
+                <div id="userForm" class="userForm">
+                    <h1 class="nUsarioT">
+                        New user
+                    </h1>
+                    <div id="datosU" class="datosU">
+                        <p class="generarNick" id="dataU">
+                            <label for="nic">Nick </label> 
+                            <input type="text" name="nick" id="nic">
+                            <button type="button"  class="btngenerarNick" name="button" value="generar" onclick="generar()">generar</button><br/>
+                        </p>
+                        <p  id="dataU">
+                            <label for="ema">Email </label> 
+                            <input type="text" name="email" id="ema"><br/>
+                        </p>
+                        
+                        <p  id="dataU">
+                            <label for="aurl">URL foto</label> 
+                            <input type="url" name="avatarUrl" id="aurl"><br/>
+                            <div class="previsualizar">
+                                <img id= "imgPre" src="./images/usuario.png" alt="user" width="80" height="80">
+                                <button type="button"  class="btnPrevisualizar" name="button" value="previsualizar" onclick="previsualizarUsuario()">previsualizar</button>
+                            </div>
+                        </p>
+                        
+                        
+                    </div>
+                    
+                    <div id="enviarUsuario" class="enviarUsuario">
+                        <button type="button"  class="btnenviarUsuario" onclick="enviarFormularioUsuario()" name="button" value="enviar">Enviar</button>
+                        <!--poneos le boton de tipo button-->
+                    </div>
+                </div>
+            </div>
+            
+        </form>
+        
+        <footer>
+            <div class="copyright">
+                Author: Kumar Baltar López-Cózar
+                <div class="contenedor">
+                    ©  Copyright: 
+                
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
